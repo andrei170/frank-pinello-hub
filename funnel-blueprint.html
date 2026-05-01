@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funnel Blueprint · For Frank Pinello · AG1</title>
+<meta name="description" content="Funnel Blueprint - built for Frank Pinello by AG1 Consulting.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Funnel Blueprint · For Frank Pinello">
+<meta property="og:description" content="Part of the funnel audit + less-than-7-day install plan built for @bestpizza33 by AG1 Consulting.">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script defer data-domain="andrei170.github.io" src="https://plausible.io/js/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="hub-page.html" class="nav-back"><span class="arrow">&larr;</span> Back to Hub</a>
+    <span class="nav-title">For Frank Pinello &middot; AG1</span>
+  </div>
+</nav>
+
+<article class="doc">
+  <header class="doc-header">
+    <span class="doc-tag">Architecture</span>
+    <h1>Funnel Blueprint - Frank Pinello</h1>
+  </header>
+
+  
+<p><strong>Architecture deliverable</strong> · Full funnel diagram, phase mapping, tech stack, integration points.</p>
+<hr />
+<h2>Funnel Diagram (top to bottom)</h2>
+<pre><code>ENTRY POINTS
+├── @bestpizza33 IG (136K) ──────────────────────────┐
+├── Vice/Munchies episode catalog (YouTube reposts) ──┤
+├── bestpizzawilliamsburg.com (restaurant traffic) ───┤
+├── YouTube channel (new, Frank-owned) ───────────────┤
+└── Cold ads (Phase 4) - Meta + YouTube ─────────────┘
+                              ↓
+                    BIO LINK ROUTER (Linktree)
+                              ↓
+              ┌──── BEST PIZZA FIVE-POINT CHECKLIST ───┐
+              │     (Simple landing page · email opt-in) │
+              │     Captures email + tags by type       │
+              └────────────────────┬────────────────────┘
+                                   ↓
+                          ┌────────┴────────┐
+                          ↓                 ↓
+                  Indie Pizzeria Owner   Pizza Enthusiast
+                  (course buyer pool)    (content follower)
+                          ↓
+                  8-TOUCH SEGMENTED NURTURE
+                  (Welcome flow, 10 days)
+                                ↓
+                    BEST PIZZA OPERATOR COURSE
+                    ($497 standard / $997 with review)
+                                ↓
+                       COURSE BUYER NURTURE
+                       (Implementation accountability)
+                                ↓
+                    QUALIFIED COMMUNITY APPLICANT
+                    (3-6 months downstream)
+                                ↓
+                        BEST PIZZA COMMUNITY
+                        (new high-tier layer - $2K-$5K)
+
+PARALLEL TRACK
+VICE CONTENT → repurposed clips → YouTube shorts → checklist opt-in
+Restaurant visitors → website opt-in → same email funnel
+</code></pre>
+<h2>Phase Mapping</h2>
+<table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>Phase</th>
+<th>Owner</th>
+<th>Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Best Pizza Operator Course landing page</td>
+<td>1</td>
+<td>AG1</td>
+<td>Webflow / custom HTML</td>
+</tr>
+<tr>
+<td>VSL hero asset</td>
+<td>1</td>
+<td>AG1 + Frank</td>
+<td>Wistia + iPhone / mirrorless at Best Pizza</td>
+</tr>
+<tr>
+<td>Stripe + payment + email auto-trigger</td>
+<td>1</td>
+<td>AG1</td>
+<td>Stripe + Kit / Kajabi</td>
+</tr>
+<tr>
+<td>Pixel + GA4 + retargeting tags</td>
+<td>1</td>
+<td>AG1</td>
+<td>Meta Pixel + GA4 + GTM</td>
+</tr>
+<tr>
+<td>Best Pizza Checklist landing page + opt-in</td>
+<td>2</td>
+<td>AG1</td>
+<td>Simple HTML + ConvertKit</td>
+</tr>
+<tr>
+<td>8-touch nurture sequence</td>
+<td>2</td>
+<td>AG1</td>
+<td>Kit / ConvertKit</td>
+</tr>
+<tr>
+<td>Bio-link router</td>
+<td>2</td>
+<td>AG1</td>
+<td>Linktree (Pro) or Beacons</td>
+</tr>
+<tr>
+<td>10-day welcome flow</td>
+<td>2</td>
+<td>AG1</td>
+<td>Kit / ConvertKit</td>
+</tr>
+<tr>
+<td>Restaurant website opt-in</td>
+<td>2</td>
+<td>AG1</td>
+<td>Simple embed on bestpizzawilliamsburg.com</td>
+</tr>
+<tr>
+<td>Photoshoot + B-roll</td>
+<td>3</td>
+<td>AG1 + photographer</td>
+<td>Best Pizza Williamsburg kitchen</td>
+</tr>
+<tr>
+<td>Hook bank + content calendar</td>
+<td>3</td>
+<td>AG1 + Frank</td>
+<td>Notion + CapCut / Premiere</td>
+</tr>
+<tr>
+<td>Vice content repurposing + YouTube build</td>
+<td>3</td>
+<td>AG1 + Frank</td>
+<td>YouTube Studio + clip editing</td>
+</tr>
+<tr>
+<td>Meta + YouTube ads</td>
+<td>4</td>
+<td>AG1</td>
+<td>Meta Ads Manager + Google Ads</td>
+</tr>
+<tr>
+<td>Retargeting campaigns</td>
+<td>4</td>
+<td>AG1</td>
+<td>Meta + Google + GTM</td>
+</tr>
+<tr>
+<td>Lookalike audiences</td>
+<td>4</td>
+<td>AG1</td>
+<td>Meta CAPI + audience builder</td>
+</tr>
+</tbody>
+</table>
+<h2>Tech Stack (recommended, swappable)</h2>
+<ul>
+<li><strong>CMS / Course host:</strong> Kajabi (preferred - all-in-one) or Teachable</li>
+<li><strong>Landing pages:</strong> Webflow (control) or Kajabi (speed)</li>
+<li><strong>Email:</strong> Kit / ConvertKit (preferred for creator audiences) or Kajabi-native</li>
+<li><strong>Payment:</strong> Stripe (course) + Whop (community / membership)</li>
+<li><strong>Video host:</strong> Wistia (course) + YouTube (long-form, Frank-owned channel)</li>
+<li><strong>Analytics:</strong> GA4 + Meta Pixel + Microsoft Clarity (heatmaps)</li>
+<li><strong>CRM:</strong> GHL (preferred) or Kajabi-native</li>
+<li><strong>Community / High-tier:</strong> Skool (preferred - low overhead) or Circle</li>
+<li><strong>Scheduling:</strong> Calendly (default) or Cal.com</li>
+<li><strong>Project / build:</strong> Notion (handover-friendly)</li>
+</ul>
+<h2>Integration Points</h2>
+<ol>
+<li>Checklist opt-in page triggers Kit on form submission with type tag (operator vs enthusiast)</li>
+<li>Email nurture triggers Kajabi enrolment on course purchase webhook</li>
+<li>Course completion routes to Best Pizza Community application form</li>
+<li>All events fire to GA4 + Meta Pixel via GTM for full funnel attribution</li>
+<li>Vice content clips link to checklist opt-in in descriptions and text overlays</li>
+<li>Restaurant website embed triggers same Kit list with "restaurant-visitor" tag</li>
+</ol>
+<h2>Owner Map</h2>
+<ul>
+<li><strong>Frank:</strong> filming (VSL + kitchen B-roll), monthly live Q&amp;A on course, content appearance for IG, top-line decisions on copy + brand, Vice content licensing conversation</li>
+<li><strong>AG1 (Andrei):</strong> everything else - landing page build, email writing, automation setup, content production cycles, YouTube channel setup, Vice repurposing workflow, ads management, weekly reporting</li>
+</ul>
+<h2>Failure Modes + Mitigations</h2>
+<ul>
+<li><strong>VSL filming delays</strong> → use existing Vice/Munchies episode clip as Phase 1 placeholder; replace with custom VSL by end of Phase 1</li>
+<li><strong>Vice licensing friction</strong> → start with new original short-form content first; add Vice clip repurposing once licensing is confirmed</li>
+<li><strong>Restaurant website update delays</strong> → run checklist opt-in as standalone page first, add restaurant embed later</li>
+<li><strong>Course content creation time</strong> → start with 2-module beta launch at $197, expand to full 6 modules over 60 days</li>
+</ul>
+<h2>KPIs (90-day)</h2>
+<ul>
+<li>Phase 1 · Best Pizza Operator Course landing live · 20+ buyers in first 30 days</li>
+<li>Phase 2 · 500+ checklist opt-ins · 8-12% IG-to-email conversion on checklist</li>
+<li>Phase 3 · 40+ short-form posts shipped · YouTube channel with 10+ videos live</li>
+<li>Phase 4 · Meta CPL under $30 · ROAS 3x by week 12</li>
+<li>Year-1 floor target · $240-600K incremental on top of existing restaurant revenue</li>
+</ul>
+
+  <footer class="doc-footer">
+    <a href="hub-page.html" class="doc-footer-link">Back to Hub</a>
+    <div class="doc-meta">Prepared 2026-04-30 &middot; Built for @bestpizza33</div>
+  </footer>
+</article>
+
+</body>
+</html>
